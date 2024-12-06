@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍页面</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #eff6f7, #e7f5fd); /* 渐变背景 */
+            color: #333;
+            overflow: hidden; /* 防止滚动条出现 */
+        }
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+            background: rgb(254, 254, 254);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px); /* 鼠标悬停时上移 */
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 30px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .info {
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #0277bd;
+            margin-bottom: 5px;
+        }
+        p {
+            color: #666;
+        }
+        .audio-description {
+            margin: 20px 0;
+            color: #555;
+            font-style: italic;
+        }
+        .controls {
+            margin-top: 30px;
+        }
+        .button {
+            cursor: pointer;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0277bd;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .button:hover {
+            background-color: #025682;
+            border-color: #0277bd;
+        }
+        audio {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: none; /* 去除默认的边框 */
+            outline: none; /* 去除点击时的轮廓线 */
+        }
+        audio::-webkit-media-controls-enclosure {
+            background: transparent; /* 去除播放器背景 */
+        }
+        audio::-webkit-media-controls-panel {
+            background: transparent; /* 去除控制器背景 */
+        }
+        /* 添加背景动画效果 */
+        @keyframes bg-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        body {
+            background: linear-gradient(135deg, #e0f7fa, #e7f5fd);
+            background-size: 400% 400%;
+            animation: bg-animation 20s ease infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.jpg" alt="个人LOGO" class="logo">
+        <div class="info">
+            <h1>姓名：李娅琦</h1>
+            <p>专业：计算机科学与技术</p>
+            <p>学号：2213603</p>
+        </div>
+        <div class="audio-description">
+            <p>这首歌《너를 위해 (为了你)》是一首非常动听的旋律，希望它能给你带来愉悦的心情。</p>
+        </div>
+        <div class="controls">
+            <audio id="audioPlayer" controls>
+                <source src="前奏.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+</body>
+</html>

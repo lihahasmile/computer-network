@@ -1,0 +1,4 @@
+﻿  client.cpp
+D:\student\大三上\计算机网络\lab3\实验3-3\client\client.cpp(515,17): warning C4244: “初始化”: 从“std::streamoff”转换到“int”，可能丢失数据
+D:\student\大三上\计算机网络\lab3\实验3-3\client\client.cpp(521,52): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  client.vcxproj -> D:\student\大三上\计算机网络\lab3\实验3-3\client\x64\Debug\client.exe
